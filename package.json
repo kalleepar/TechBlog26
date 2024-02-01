@@ -1,5 +1,5 @@
 {
-  "name": "tech-blog",
+  "name": "techblog24",
   "description": "",
   "version": "1.0.0",
   "main": "server.js",
@@ -24,7 +24,7 @@
     "type": "git",
     "url": ""
   },
-  "author": "",
+  "author": "kal!",
   "license": "ISC",
   "bugs": {
     

@@ -1,4 +1,4 @@
-// Create new post (front-end)
+// new post 
 
 const addNewPostBtn = document.querySelector("#create-post-btn");
 const createPostCard = document.querySelector('#create-post-card');
@@ -46,6 +46,6 @@ const createNewPost = async (event) => {
 	}
 };
 
-// Listeners
+
 document.querySelector("#add-post-btn").addEventListener("click", createNewPost);
 addNewPostBtn.addEventListener("click", showForm);

@@ -1,4 +1,4 @@
-// This is for signing up new users
+
 const signupFormHandler = async (event) => {
 	event.preventDefault();
 
@@ -14,9 +14,9 @@ const signupFormHandler = async (event) => {
 		});
 
 		if (response.ok) {
-			// console.log(response.body)
+			
 			window.location.href = "/dashboard";
-			// window.location.replace('/dashboard');
+		
 		} else {
 			alert(response.statusText);
 		}

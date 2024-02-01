@@ -1,9 +1,9 @@
-// Edit Post Frontend Functions (Update and Delete)
+
 
 // Post ID
 const postID = window.location.pathname.split("/").pop();
 
-// Update Post frontend
+
 const updatePost = async (event) => {
 	event.preventDefault();
 	console.log("The update button was clicked");
@@ -31,7 +31,7 @@ const updatePost = async (event) => {
 	}
 };
 
-// Delete post frontend
+
 const deletePost = async (event) => {
 	event.preventDefault();
 	console.log("The delete button was clicked");
@@ -47,6 +47,5 @@ const deletePost = async (event) => {
 	}
 };
 
-// Listeners
 document.querySelector("#update-post-btn").addEventListener("click", updatePost);
 document.querySelector("#delete-post-btn").addEventListener("click", deletePost);

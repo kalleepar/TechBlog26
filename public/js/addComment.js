@@ -1,4 +1,4 @@
-// front end for new comment
+//  new comment
 
 const createNewComment = async(event) => {
     event.preventDefault();
@@ -26,7 +26,7 @@ const createNewComment = async(event) => {
     }
 }
 
-// Listener
+
 document
     .querySelector('#add-comment-btn')
     .addEventListener('click', createNewComment);

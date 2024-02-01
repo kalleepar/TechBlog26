@@ -1,4 +1,4 @@
-// Delete comment frontend
+// Delete 
 
 const deleteComment = async (event) => {
 	event.preventDefault();
@@ -17,5 +17,5 @@ const deleteComment = async (event) => {
 	}
 };
 
-// Listeners
+
 document.querySelector("#delete-comment-btn").addEventListener("click", deleteComment);
