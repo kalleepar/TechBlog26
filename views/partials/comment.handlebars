@@ -1,0 +1,14 @@
+{{! partials for comments }}
+<section class="comments">
+	<div class="comments-card">
+		<p>{{comment_content}}</p>
+	</div>
+	<div class="comment-user">
+		<p>By {{user.username}} on {{format_date date_created}}</p>
+	</div>
+	{{#if is_owner}}
+	<div class="delete-comment">
+		<button id="delete-comment-btn" type="submit"><i class="fas fa-minus-square"></i></button>
+	</div>
+	{{/if}}
+</section>

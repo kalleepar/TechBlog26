@@ -1,0 +1,20 @@
+[
+	{
+		"id": 1,
+		"email": "Bianca@Hotmail.com",
+		"username": "._x_BIANCA_x_.",
+		"password": "102040"
+	},
+	{
+		"id": 123,
+        "email": "Kal@bigmail.com",
+        "username": "kal",
+		"password": "pw"
+	},
+	{
+		"id": 456,
+		"email": "Iroquois@Foxhound.net",
+        "username": "Snake",
+		"password": "lalilulelo"
+	}
+]

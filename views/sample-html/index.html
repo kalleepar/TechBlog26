@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tech Blog</title>
+		<!-- <link rel="stylesheet" href="../public/css/jass.css"/> -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../../public/css/style.css" />
+	</head>
+	<body>
+		<header>
+			<div class="top-container">
+				<nav class="navigation-bar">
+					<li><a>Home</a></li>
+					<!-- If logged in, show dashboard and logout -->
+					<li><a>Dashboard</a></li>
+					<li><a>Logout</a></li>
+					<!-- Else, show login -->
+					<li><a>Login</a></li>
+				</nav>
+				<h1 class="title">The Tech Blog</h1>
+			</div>
+		</header>
+		<main class="main-container">
+			<!-- Insert main body here -->
+
+			<!-- below is login page -->
+			<section class="login">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Login</div>
+					</div>
+					<div class="card-body">
+						<form class="login-form">
+							<div>
+								<label for="username-login" class="form-label">Username</label>
+								<input type="text" class="form-input" id="username-login" />
+							</div>
+							<div>
+								<label for="password-login" class="form-label">Password</label>
+								<input type="password" class="form-input" id="password-login" />
+							</div>
+							<div>
+								<button type="submit" class="btn">Login</button>
+							</div>
+							<a class="signup-link" href="../public/js/signup.js"
+								>Sign up instead</a
+							>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<script src="../public/js/login.js"></script>
+
+			<!-- below is signup page -->
+			<section class="signup">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Sign Up</div>
+					</div>
+					<div class="card-body">
+						<form class="signup-form">
+							<div>
+								<label for="email-signup" class="form-label">Email</label>
+								<input type="text" class="form-input" id="email-signup" />
+							</div>
+							<div>
+								<label for="username-signup" class="form-label">Username</label>
+								<input type="text" class="form-input" id="username-signup" />
+							</div>
+							<div>
+								<label for="password-signup" class="form-label">Password</label>
+								<input
+									type="password"
+									class="form-input"
+									id="password-signup"
+								/>
+							</div>
+							<div>
+								<button type="submit" class="btn">Sign Up</button>
+							</div>
+							<a class="login-link" href="../public/js/login.js"
+								>Login instead</a
+							>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<!-- Below is sample post overview -->
+			<section class="posts-overview">
+				<div class="post-overview">
+					<div class="post-overview-card">
+						<div class="post-title"><h3><a href="/post/{{id}}"> Post title </a></h3></div>
+						<div class="post-datetime"><p>Posted by test on 06/06/2021</p></div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Below is a sample post -->
+			<section class="posts">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">
+							<h3 class="card-title"><a>This is a sample post title</a></h3>
+						</div>
+						<div class="card-datetime">
+							<p>Posted by Aaron on 06.06.2021</p>
+						</div>
+					</div>
+					<div class="card-body">
+						<p>This is a sample post content.</p>
+					</div>
+					<section class="comments">
+						<div class="comments-card">
+							<p>This is a comment.</p>
+						</div>
+						<div class="comment-user">
+							<p>Aaron, 13/06/2021</p>
+						</div>
+						<div class="delete-comment">
+							<p><i class="fas fa-minus-square"></i></p>
+						</div>
+					</section>
+					<section class="add-comment">
+						<div class="comment-card">
+							<div class="card-body">
+								<form id="new-comment-form">
+									<label for="new-comment-content" class="form-label"></label>
+									<textarea
+										rows="2"
+										cols="120"
+										placeholder="Add your comment here."
+										aria-setsize="fixed"
+									></textarea>
+								</form>
+								<button type="submit" class="new-comment-btn btn"><i
+										class="fas fa-plus"
+									></i>
+									ADD COMMENT</button>
+							</div>
+						</div>
+					</section>
+				</div>
+			</section>
+
+			<!-- Below is sample html for adding comments -->
+			<section class="create-comment">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Create New Comment</div>
+					</div>
+					<div class="card-body">
+						<form>
+							<textarea rows="2" cols="120" placeholder="Add your comment here." aria-setsize="fixed"></textarea>
+						</form>
+					<button type="submit" class="new-comment-btn btn"><i class="fas fa-plus"></i> ADD COMMENT</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- Below is sample html for adding posts -->
+			<section class="create-post">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Create New Post</div>
+					</div>
+					<div class="card-body">
+						<form>
+							<label for="new-post-title" class="form-label">TITLE</label>
+							<textarea rows="2" placeholder="Add your post title here." aria-setsize="fixed"></textarea>
+							<label for="new-post-comment" class="form-label">POST CONTENT</label>
+							<textarea rows="10" placeholder="Add your post content here." aria-setsize="fixed"></textarea>
+						</form>
+						<button type="submit" class="new-post-btn btn"><i class="fas fa-plus"></i> ADD POST</button>
+					</div>
+			</section>
+
+			<!-- Below is sample HTML for editing posts -->
+			<section id="edit-post-card" class="edit-post">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Edit Post</div>
+					</div>
+					<div class="card-body">
+						<form id="new-post-form">
+							<label for="new-post-title" class="form-label">TITLE</label>
+							<textarea
+								rows="2"
+								placeholder="{{title}}"
+								aria-setsize="fixed"
+							></textarea>
+							<label for="new-post-content" class="form-label">POST CONTENT</label>
+							<textarea
+								rows="10"
+								placeholder="{{post_content}}"
+								aria-setsize="fixed"
+							></textarea>
+						</form>
+						<button id="update-post-btn" type="submit" class="new-post-btn btn">
+							<i class="fas fa-pen"></i> UPDATE POST </button>
+						<button id="delete-post-btn" type="submit" class="new-post-btn btn">
+							<i class="fas fa-trash"></i> DELETE POST</button>
+					</div>
+				</div>
+			</section>
+			
+		</main>
+	</body>
+</html>

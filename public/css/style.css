@@ -1,0 +1,325 @@
+:root {
+	/* insert colours here */
+	--pinky: rgb(119, 13, 77);
+	--gentlebrown: rgb(117, 103, 103);
+	--brownishpink: rgb(92, 69, 73);
+	--lightgreen: rgb(178, 194, 178);
+	--stormgrey: rgb(41, 40, 40);
+	--grey: #6f6866;
+	--purewhite: white;
+	--strikingred: rgb(180, 12, 146);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	line-height: 1.5;
+	font-size: 16px;
+	background-color: var(--lightgreen);
+}
+
+h1 {
+	font-weight: 700;
+	margin: 0;
+	color: var(--dark);
+	line-height: 1.25;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	cursor: pointer;
+    text-decoration: none;
+	color: var(--lightgreen);
+}
+
+a:hover {
+    text-decoration: none;
+	color: var(--brownishpink);
+}
+
+a :visited {
+	color: var(--lightgreen);
+	text-decoration: none;
+}
+
+header {
+	background-color: var(--pinky);
+}
+
+textarea {
+	padding: 10px;
+	resize: none;
+	width: 100%;
+}
+
+textarea:placeholder-shown {
+	font-style: italic;
+}
+
+label {
+	font-weight: 900;
+}
+
+.top-container {
+	padding: 10px;
+}
+
+.navigation-bar {
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: center;
+	list-style: none;
+}
+
+.navigation-bar li {
+	text-decoration: none;
+	color: var(--lightgreen);
+	padding: 20px 60px;
+	padding-left: 60px;
+	padding-right: 60px;
+	font-weight: 300;
+}
+
+.navigation-bar a:hover{
+	color: var(--purewhite);
+}
+
+.title {
+	padding-left: 60px;
+	padding-right: 60px;
+	margin-left: 60px;
+	margin-bottom: 20px;
+	display: inline-block;
+	border-radius: 10px;
+	background-color: var(--lightgreen);
+	box-shadow: 6px 5px var(--grey);
+	font-weight: bolder;
+}
+
+.main-container {
+    margin: 20px auto;
+	width: 80%;
+}
+
+.hide {
+	display: none;
+}
+
+.return-dashboard {
+	color: var(--brownishpink);
+}
+
+.card {
+	background-color: var(--lightgreen);
+    border-radius: 10px;
+    border: 3px solid var(--pinky);
+	margin: 10px;
+}
+
+.card-header {
+	background-color: var(--pinky);
+    padding: 10px 15px;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title {
+	color: var(--lightgreen);
+	font-weight: 900;
+	font-size: 28px;
+	padding: 10px;
+}
+
+.card-title a:hover {
+	color: var(--purewhite);
+}
+
+.card-datetime {
+	color: var(--lightgreen);
+	font-style: italic;
+	font-size: 12px;
+	padding: 5px;
+}
+
+.signup-link, .login-link {
+    color: var(--pinky);
+	text-decoration: none;
+}
+
+.signup-link:hover, .login-link:hover {
+	text-decoration: none;
+}
+
+.signup-link:visited, .login-link:visited {
+	text-decoration: none;    
+	color: var(--pinky);
+}
+
+.form-label {
+    display: flex;
+    width: auto;
+}
+
+.form-input {
+    width: 100%;
+}
+
+.card-body {
+	padding: 15px;
+	justify-content: center;
+}
+
+.meta {
+	font-size: 14px;
+}
+
+.content {
+	margin-bottom: 20px;
+}
+
+.btn {
+    font-size: 16px;
+    text-decoration:none;
+    padding: 10px 5px;
+    width: 100%;
+    display: block;
+    margin: 15px 0;
+    border-radius: 10px;
+    color: var(--lightgreen);
+    border: none;
+    outline: none;
+    background-color: var(--grey);
+    box-shadow: 3px 3px var(--pinky);
+    transform: translate(-1px, -1px);
+}
+
+.login, .signup, .posts, .comments, .create-post, .create-comment {
+	margin-top: 10px;
+}
+
+.add-comment {
+	margin-bottom: 10px;
+}
+
+.comments {
+	border: 0.1px solid var(--pinky);
+	padding: 20px;
+	background-color: aliceblue;
+	color: black;
+	margin-bottom: 10px;
+}
+
+.comment-card {
+	background-color: var(--lightgreen);
+    border-radius: 10px;
+}
+
+.comment-user {
+	text-align: right;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.delete-comment {
+	display: flex;
+	background-color: transparent;
+	border: none;
+	text-align: left;
+	cursor: pointer;
+}
+
+#delete-comment-btn {
+	background-color: transparent;
+	border: none;
+}
+
+#delete-comment-btn i:hover {
+	color: var(--strikingred);
+}
+
+.comment-btn {
+	border-radius: 10px;
+	text-align: right;
+	justify-content: flex-end;
+}
+
+.comment-btn:hover{
+	transition: 0.5s;
+	background-color: var(--pinky);
+	color: var(--lightgreen)
+}
+
+.new-post {
+	text-align: center;
+}
+
+.create-post-btn {
+	display: flex;
+	align-items: center;
+	align-self: center;
+	justify-content: center;
+}
+
+.new-comment {
+	text-align: center;
+}
+
+.new-post-btn, .new-comment-btn {
+	border-radius: 10px;
+	text-align: center;
+	justify-content: center;
+	width: 100%;
+	background-color: var(--gentlebrown);
+	color: white;
+}
+
+.post-overview {
+	border: 5px solid var(--stormgrey);
+	border-radius: 10px;
+	margin: 10px;
+}
+
+
+.post-overview-card {
+	display: flex;
+	background-color: var(--brownishpink);
+	color: var(--purewhite);
+	padding: 5px;
+	align-content: center;
+    justify-content: space-between;
+    align-items: center;
+	border-radius: 5px;
+}
+
+.post-overview-card :hover {
+	cursor: pointer;
+	color: var(--lightgreen);
+}
+
+.post-title a {
+	color: var(--purewhite);
+	font-weight: 500;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.post-datetime {
+	color: var(--purewhite);
+	font-style: italic;
+	font-size: 12px;
+	padding: 10px;
+}
+
+.post-expanded {
+	display: flex;
+}
+

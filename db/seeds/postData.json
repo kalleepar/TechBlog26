@@ -1,0 +1,23 @@
+[
+	{
+		"id": 1,
+        "title": "MVC",
+		"post_content": "A software architectural pattern commonly used in web development. It provides a structured approach to designing and organizing code for building applications.",
+		"date_created": "1/31/24",
+        "user_id": 1
+	},
+	{
+		"id": 2,
+        "title": "The Future of AI",
+		"post_content": "As AI continues to advance, it holds great potential to transform society and improve our lives in various ways. It is an exciting field that offers immense opportunities for innovation and growth.",
+		"date_created": "1/30/24",
+        "user_id": 123
+	},
+	{
+		"id": 3,
+        "title": "Welcome to Tech Blog 24!",
+		"post_content": "Create an account and begin posting notes and questions to the community.",
+		"date_created": "11/12/2023",
+        "user_id": 456
+	}
+]

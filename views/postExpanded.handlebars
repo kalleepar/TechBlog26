@@ -1,0 +1,71 @@
+{{! This is what the user will see when they click on the title of post (i.e. brings to a page with expanded post) }}
+{{#if is_owner}}
+<a class="return-dashboard" href="/dashboard">&larr; Back to dashboard</a>
+<section id="edit-post-card" class="edit-post">
+	<div class="card">
+		<div class="card-header">
+			<div class="card-title">Edit Post</div>
+		</div>
+		<div class="card-body">
+			<form id="new-post-form">
+				<label for="update-post-title" class="form-label">TITLE</label>
+				<textarea
+					id="update-post-title"
+					rows="2"
+					placeholder="{{title}}"
+					aria-setsize="fixed"
+				></textarea>
+				<label for="update-post-content" class="form-label">POST CONTENT</label>
+				<textarea
+					id="update-post-content"
+					rows="10"
+					placeholder="{{post_content}}"
+					aria-setsize="fixed"
+				></textarea>
+			</form>
+			<button id="update-post-btn" type="submit" class="new-post-btn btn">
+				<i class="fas fa-pen"></i>
+				UPDATE POST
+			</button>
+			<button id="delete-post-btn" type="submit" class="new-post-btn btn">
+				<i class="fas fa-trash"></i>
+				DELETE POST</button>
+		</div>
+	</div>
+</section>
+
+{{#each comments as |comment|}}
+{{>comment}}
+{{/each}}
+
+{{>addComment}}
+
+<script src="/js/editPost.js"></script>
+
+{{else}}
+
+{{!--  --}}
+
+<section class="posts">
+	<div class="card">
+		<div class="card-header">
+			<div class="card-title">
+				<h3 class="card-title">{{title}}</h3>
+			</div>
+			<div class="card-datetime">
+				<p>Posted by {{user.username}} on {{format_date date_created}}</p>
+			</div>
+		</div>
+		<div class="card-body">
+			<p>{{post_content}}</p>
+		</div>
+		{{#each comments as |comment|}}
+		{{>comment}}
+		{{/each}}
+		{{#if logged_in}}
+			{{>addComment}}
+		{{/if}}
+	</div>
+</section>
+
+{{/if}}
