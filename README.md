@@ -1,9 +1,9 @@
-# Extreme Ecommerce
+# TechBlog24
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-This program was developed to seed and view data via the Insomnia application.
+This program was developed to log comments with other users.
 
 # Table of Contents 
 * [Installation](##-Installation)
@@ -21,13 +21,7 @@ Nodes:
 * express
 
 ## Usage
-To begin application seed the approrpiate table with data and launch server by typing 'node server.js' into the terminal.
-
-Video demo:
-* https://app.screencastify.com/v3/watch/yIttLPHs9IHWH0rK6FYt
-* https://app.screencastify.com/v3/watch/7n1dFTSWw2rDTNXFt6G3
-![Alt text](https://github.com/kalleepar/extreme-ecommerce-enhanced/blob/main/samples/eeesample1.jpg)
-![Alt text](https://github.com/kalleepar/extreme-ecommerce-enhanced/blob/main/samples/eeesample2.jpg)
+To begin application login or create an account and then proceed to comment and mingle!
 
 ## License 
 MIT
